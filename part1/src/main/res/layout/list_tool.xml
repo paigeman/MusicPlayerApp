@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_tool"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00000000"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:title="歌单"
+    app:titleTextColor="@android:color/black"
+    app:navigationIcon="@drawable/arrow" >
+
+<!--    <RelativeLayout android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" >-->
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/list_top"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="12dp">-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/list_exit"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/arrow"-->
+<!--                android:background="#00808080" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="歌单"-->
+<!--                android:textSize="23sp"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:layout_toRightOf="@id/list_exit"-->
+<!--                android:layout_marginLeft="10dp"/>-->
+
+<!--        </RelativeLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_below="@id/list_top"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:layout_marginHorizontal="5dp">-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                app:cardElevation="6dp"-->
+<!--                android:layout_marginHorizontal="10dp" >-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/list_cover"-->
+<!--                    android:layout_width="150dp"-->
+<!--                    android:layout_height="150dp"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:src="@mipmap/song1" />-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:text="我喜欢的音乐" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/search"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/search"-->
+<!--            android:background="#00808080"-->
+<!--            android:layout_toLeftOf="@id/etc" />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/etc"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/etc"-->
+<!--            android:background="#00808080"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginHorizontal="10dp"/>-->
+
+<!--    </RelativeLayout>-->
+
+</androidx.appcompat.widget.Toolbar>

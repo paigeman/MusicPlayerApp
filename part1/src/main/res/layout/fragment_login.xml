@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment"
+    android:id="@+id/login_content">
+
+    <include layout="@layout/login_tool" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/login_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/anoymous"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="80dp"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/login_username_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_image">
+        <ImageView
+            android:id="@+id/login_username_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user"/>
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="请输入用户名"
+            android:layout_toRightOf="@id/login_username_image"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_passwd_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_username_container"
+        android:layout_marginVertical="20dp">
+        <ImageView
+            android:id="@+id/login_passwd_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lock"/>
+        <EditText
+            android:id="@+id/login_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="请输入密码"
+            android:layout_toRightOf="@id/login_passwd_image"
+            android:password="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_passwd_container"
+        android:layout_marginVertical="20dp">
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="50dp"/>
+        <Button
+            android:id="@+id/login_register"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:background="@android:color/holo_green_light"
+            android:layout_toRightOf="@id/login_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="50dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

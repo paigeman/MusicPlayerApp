@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="128dp"
+    android:id="@+id/notify">
+
+    <ImageView
+        android:id="@+id/notify_image"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_alignParentLeft="true"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notify_text"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/notify_image"
+        android:layout_marginLeft="40dp"
+        android:layout_marginVertical="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/notify_songName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="42px"/>
+            <TextView
+                android:id="@+id/notify_songIntroduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notify_songName"
+                android:textColor="#999999"
+                android:textSize="39px"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/notify_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/notify_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/notify_image"
+        android:layout_below="@id/notify_text"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="10dp">
+
+<!--        centerInParent和toRightOf不连用-->
+        <ImageButton
+            android:id="@+id/notify_before"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notify_before"
+            android:background="@android:color/transparent"
+
+            android:layout_alignParentLeft="true"/>
+
+        <ImageButton
+            android:id="@+id/notify_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notify_play"
+            android:background="@android:color/transparent"
+
+            android:layout_centerInParent="true"/>
+
+        <ImageButton
+            android:id="@+id/notify_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notify_after"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

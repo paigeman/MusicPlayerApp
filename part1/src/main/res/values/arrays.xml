@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="songImage">
+        <item>@mipmap/song5</item>
+        <item>@mipmap/song5</item>
+        <item>@mipmap/song6</item>
+        <item>@mipmap/song4</item>
+        <item>@mipmap/song7</item>
+        <item>@mipmap/song1</item>
+        <item>@mipmap/song3</item>
+        <item>@mipmap/song2</item>
+    </integer-array>
+
+    <string-array name="songName">
+        <item>All I Want</item>
+        <item>Talk</item>
+        <item>Yellow</item>
+        <item>From The Window Of My Room</item>
+        <item>Hoppípolla</item>
+        <item>暗号</item>
+        <item>心做し</item>
+        <item>晴天</item>
+    </string-array>
+
+    <string-array name="songAuthor">
+        <item>Kodaline</item>
+        <item>Kodaline</item>
+        <item>Coldplay</item>
+        <item>Dorena</item>
+        <item>Sigur Rós</item>
+        <item>周杰伦</item>
+        <item>GUMI / 一之瀬ユウ</item>
+        <item>周杰伦</item>
+    </string-array>
+
+    <string-array name="songDescription">
+        <item>Kodaline-In A Perfect World</item>
+        <item>Kodaline-In A Perfect World</item>
+        <item>Coldplay-Yellow</item>
+        <item>Dorena-About Everything And More</item>
+        <item>Sigur Rós-Takk...</item>
+        <item>周杰伦-八度空间</item>
+        <item>GUMI / 一之瀬ユウ-EXIT TUNES PRESENTS GUMical from Megpoid</item>
+        <item>周杰伦-叶惠美</item>
+    </string-array>
+
+</resources>

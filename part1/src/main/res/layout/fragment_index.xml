@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".IndexFragment"
+    android:id="@+id/index_content"
+    android:background="#f2f4f5">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--ToolBar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <include layout="@layout/index_tool" />
+
+        <RelativeLayout
+            android:id="@+id/local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_below="@id/index_tool"
+            android:padding="20dp">
+            <ImageView
+                android:id="@+id/local_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/song1" />
+            <TextView
+                android:id="@+id/local_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本地音乐"
+                android:layout_toRightOf="@id/local_image"
+                android:textSize="51px"
+                android:textColor="#333333"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/daily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_below="@id/local"
+            android:padding="20dp">
+            <ImageView
+                android:id="@+id/daily_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/song1" />
+            <TextView
+                android:id="@+id/daily_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐歌单"
+                android:layout_toRightOf="@id/daily_image"
+                android:textSize="51px"
+                android:textColor="#333333"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_below="@id/daily"
+            android:padding="20dp">
+            <ImageView
+                android:id="@+id/top_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/hot" />
+            <TextView
+                android:id="@+id/top_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="热门单曲"
+                android:layout_toRightOf="@id/top_image"
+                android:textSize="51px"
+                android:textColor="#333333"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--NavigationView-->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu"
+        android:background="#f2f4f5"
+        app:headerLayout="@layout/drawer_header"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
